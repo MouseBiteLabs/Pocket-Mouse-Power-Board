@@ -67,11 +67,6 @@ If parts are out of stock or backordered, you can search for the parts on Digike
 ### v1.0
 - Release version
 
-## Resources
--	<a href="https://www.ti.com/lit/ds/symlink/tps61202.pdf?ts=1680457966449&ref_url=https%253A%252F%252Fwww.ti.com%252Fproduct%252FTPS61202">TPS61202 datasheet</a>
--	<a href="https://www.ti.com/lit/ds/symlink/tps3840.pdf?ts=1656386735143">TPS3840 datasheet</a>
--	<a href="https://www.ti.com/lit/an/snva836a/snva836a.pdf">Latching a Voltage Supervisor Application Note</a>
-
 ## License
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>. You are able to copy and redistribute the material in any medium or format, as well as remix, transform, or build upon the material for any purpose (even commercial) - but you **must** give appropriate credit, provide a link to the license, and indicate if any changes were made.
 
