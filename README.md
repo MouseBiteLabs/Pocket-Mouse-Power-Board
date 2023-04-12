@@ -58,6 +58,10 @@ If parts are out of stock or backordered, you can search for the parts on Digike
 | U1             | 1   | TPS61202    | WSON-10   | Boost Converter  |                                              | [https://www.mouser.com/ProductDetail/Texas-Instruments/TPS61202DSCR?qs=WxL8HmPi5r6YtrNaHRAS2Q%3D%3D](https://www.mouser.com/ProductDetail/Texas-Instruments/TPS61202DSCR?qs=WxL8HmPi5r6YtrNaHRAS2Q%3D%3D)                                             |
 | U2             | 1   | TPS3840DL20 | SOT23-5   | Supervisory IC   |                                              | [https://www.mouser.com/ProductDetail/Texas-Instruments/TPS3840DL20DBVR?qs=T3oQrply3y%2FZsfSrLIG7Ww%3D%3D](https://www.mouser.com/ProductDetail/Texas-Instruments/TPS3840DL20DBVR?qs=T3oQrply3y%2FZsfSrLIG7Ww%3D%3D)                                   |
 
+## Potential Issues
+
+- Using a flash cart, such as the Everdrive or EZ-Flash, the power draw during start-up may be too high and cause the battery voltage to drop below the 2V threshold. But if you simply cycle the power switch when this happens, the stored energy in the cart should be enough to get it to start-up normally.
+
 ## Revision History
 
 ### v1.1
