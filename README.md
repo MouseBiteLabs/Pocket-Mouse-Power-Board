@@ -1,14 +1,14 @@
 # Pocket Mouse Power Board
 
-This is a power regulator board for my <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color">Game Boy Pocket Color (MGBC)</a> project. This *should* work perfectly fine on a regular Game Boy Color or Pocket, but I haven't exhaustively tested it yet.
+This is a power regulator board for my <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color">Game Boy Pocket Color (MGBC)</a> project. This *should* work perfectly fine on a regular Game Boy Color or Pocket, but I haven't exhaustively tested it yet. I have, however, tested it in my MGBC project extensively.
 
 ![image](https://user-images.githubusercontent.com/97127539/232180527-3f205af6-992e-4e2f-be83-e29519c0765d.png)
 
 ## Disclaimer
 
-Please keep in mind, I haven't fully tested this power board, so **you accept any and all risks associated with using this board.** That being said, it's similar to a lot of other replacement Game Boy power supplies out there, with a few distinct differences. I'll be completing full testing of this board in the coming weeks.
-
 If you are assembling this yourself, I suggest testing the assembled board externally before mounting it to your Game Boy. This can be done by connecting pins 1 *and* 2 to the positive terminal of an input voltage source with at least 2 V output (using battery clips or an external power supply) and measuring the output voltage on pin 7 (remember to connect pin 3 to the ground/negative end of the power source). Pin 7 should read a consistent ~5 V. At the very least, you can add the assembled board to your Game Boy PCB, but keep pin 7 empty until you confirm with a meter that you are getting a solid 5 V output, after which you can add a wire to connect it to the main board.
+
+**This is a complicated build that requires high level soldering skills. Please do not attempt if you do not have advanced soldering experience. Do not attempt to hand-solder the QFN component on this board, you must use either hot air or a hot plate.**
 
 ## Board Characteristics
 
@@ -61,7 +61,8 @@ You can leave C2 out of the circuit if desired. It won't have an impact to the o
 
 ## Potential Issues
 
-- Using a flash cart, such as the Everdrive or EZ-Flash, the power draw during start-up may be too high and cause the battery voltage to drop below the 2V threshold. You may be able to get it to boot by turning the power switch off and on again. Regardless, this should only occur when you have low battery life anyway.
+- Using a flash cart, such as the Everdrive or EZ-Flash, the power draw during start-up may be too high and cause the battery voltage to drop below the 2V threshold. You may be able to get it to boot by turning the power switch off and on again. Regardless, this should only occur when you have very low battery life. The components I have chosen should effectively prevent this error from occurring, but I have not tested every system configuration possible.
+- When first placing batteries in, you must wait a few seconds for the capacitors to charge up, before it will operate correctly. This is only upon first insertion - once the batteries have been in the system for longer than a few seconds, it will operate completely normally.
 
 ## Revision History
 
