@@ -16,7 +16,7 @@ The Pocket Mouse has seven pins, similar to the Game Boy Color power board. In t
 
 Here's the schematic in full:
 
-![schematic](https://user-images.githubusercontent.com/97127539/232180764-2131ed04-ed38-4e8c-81c5-a218caad76d3.png)
+![image](https://github.com/MouseBiteLabs/Pocket-Mouse-Power-Board/assets/97127539/80f18c17-f6ff-4180-b920-6cb04e39f9a0)
 
 ## Boost Converter (U1)
 
