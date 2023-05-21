@@ -11,12 +11,21 @@ If you are assembling this yourself, I suggest testing the assembled board exter
 
 **This is a complicated build that requires high level soldering skills. Please do not attempt if you do not have advanced soldering experience. Do not attempt to hand-solder the QFN component on this board, you must use either hot air or a hot plate.**
 
-## Board Characteristics
+## Board Characteristics and Order Information
 
 The zipped folder contains all the gerber files for this board.
 -	Layers: 2
 -	Thickness: 1.6mm or thinner
 -	Surface Finish: ENIG or HASL (ENIG may be easier to solder)
+
+
+**I sell this board on Etsy, so you don't have to buy multiples from board fabricators:**
+
+<a href="https://www.etsy.com/listing/1473483915/pocket-mouse-power-board"><img src="https://github-production-user-asset-6210df.s3.amazonaws.com/97127539/239718536-5c9aefe3-0628-4434-b8d8-55ff80ac3bbc.png" alt="PCB from Etsy" /></a> 
+
+You can alternatively use the zipped folder at any board fabricator you like. You may also buy the board from PCBWay using this link (disclosure: I receive 10% of the sale value to go towards future PCB orders):
+
+<a href="https://www.pcbway.com/project/shareproject/Pocket_Mouse_Power_Board_3c1c3bc6.html"><img src="https://www.pcbway.com/project/img/images/frompcbway-1220.png" alt="PCB from PCBWay" /></a> 
 
 ## Features
 
