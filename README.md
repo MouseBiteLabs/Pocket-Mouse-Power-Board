@@ -33,7 +33,6 @@ Some features of this power board include:
 
 * Changing the power switch to a "soft power switch," meaning the main power of the Game Boy does not flow through the switch. A dirty power switch can severly impact performance, so using this scheme can remedy that issue.
 * Generally improved efficiency over the OEM regulator, and increased switching frequency.
-* Improves the audio output of the Game Boy.
 * Bootloop protection circuitry to prevent overdischarge of AAA batteries, and to allow the Game Boy to die gracefully instead of violently stuttering until the regulator gives up.
 
 ## Using with a Game Boy Color or Game Boy Pocket
