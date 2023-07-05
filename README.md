@@ -75,6 +75,11 @@ You can leave C2 out of the circuit if desired. It won't have an impact to the o
 
 ## Revision History
 
+### v1.3 (PLANNED)
+- Added diode to fast charge C1 (removes need to wait a few seconds before use after placing batteries in the first time)
+- Added test points for various nets
+- Removed CT capacitor for U2
+
 ### v1.2
 - Changed C1 to 0805 size, changed value to 22uF
 - R6 changed to 100k
