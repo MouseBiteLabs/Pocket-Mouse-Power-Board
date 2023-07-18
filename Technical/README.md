@@ -16,7 +16,7 @@ The Pocket Mouse has seven pins, similar to the Game Boy Color power board. In t
 
 Here's the schematic in full:
 
-![image](https://github.com/MouseBiteLabs/Pocket-Mouse-Power-Board/assets/97127539/80f18c17-f6ff-4180-b920-6cb04e39f9a0)
+![schematic](https://github.com/MouseBiteLabs/Pocket-Mouse-Power-Board/assets/97127539/457e0d67-876d-493a-96a3-1f956518cece)
 
 ## Boost Converter (U1)
 
@@ -42,7 +42,9 @@ The specific part I chose was the TPS3840DL20. The DL indicates the /RESET is an
 
 You may notice the VDD pin of U2 isn’t directly powered by the battery voltage (VCC). C1 and R6 on the battery voltage filter out any power supply transients, which can be seen during normal gameplay, but also during initial turn-on. During the boost converter start-up, the loads on the 5 V supply will draw a considerable amount of current from the batteries for nearly a full second, causing the battery voltage to dip quite low - low enough that U2 would detect an undervoltage and shut off the converter before it could finish starting up! Furthermore, loud audio can introduce kHz range ripple on the battery voltage, so the low pass filter will smooth that out to prevent nuisance faults. The current draw of the TPS3840 is less than a microamp, so the voltage drop across R6 is negligible for detecting the *actual* dead battery case. The low consumption also means U2 won't have any perceptible impact to battery life despite always being connected to the batteries.
 
-The CT pin on this chip introduces a delayed start function. Adding a 0.1 uF capacitor to this pin will cause the /RESET output to be held low for approximately 62 milliseconds no matter what the supply voltage is. This is really only useful in the event you put the batteries in while the power switch is already on, because the delay only applies the first time power is applied to the chip. But because the time constant from C1/R6 is so large, this pin doesn't functionally do anything. You can safely omit C2 without impacting operation.
+D1 is included to quickly charge up C1 when batteries are first inserted into the system. It does not appreciably contribute to the discharge of C1.
+
+The CT pin on this chip introduces a delayed start function. Adding a 0.1 uF capacitor to this pin will cause the /RESET output to be held low for approximately 62 milliseconds no matter what the supply voltage is. This isn't necessary for this implementation, so it goes unused.
 
 ## Latching Circuit (Q1 - Q4)
 
