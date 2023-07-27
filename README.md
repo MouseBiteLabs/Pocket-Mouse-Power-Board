@@ -76,7 +76,7 @@ If you wish to use this on an original Game Boy system, you must:
 
 ## Bill of Materials
 
-A prepopulated cart from Mouser can be found here: https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=8cd8ac3cba. The quantities in the cart are enough such that there is at least one extra component in case you drop or lose one, except for U1 and U2 as they are more expensive. You may want to consider ordering multiple quantities of those parts just in case.
+A prepopulated cart from Mouser can be found here: https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=72ef9a3afb. The quantities in the cart are enough such that there is at least one extra component in case you drop or lose one, except for U1 and U2 as they are more expensive. You may want to consider ordering multiple quantities of those parts just in case.
 
 If parts are out of stock or backordered, you can search for the parts on Digikey. The only parts that have no replacements are U1 and U2, every other component has suitable alternate parts you can search for.
 
@@ -95,9 +95,12 @@ C2 is removed on v1.3, and D1 is only used on v1.3.
 | R2, R3, R5     | 3   | 10k         | 0603      | Resistor         |                                              | [https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0710KL?qs=grNVn54RoB%252B3GtjbJj3wJQ%3D%3D](https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0710KL?qs=grNVn54RoB%252B3GtjbJj3wJQ%3D%3D)                                                       |
 | U1             | 1   | TPS61202    | WSON-10   | Boost Converter  |                                              | [https://www.mouser.com/ProductDetail/Texas-Instruments/TPS61202DSCR?qs=WxL8HmPi5r6YtrNaHRAS2Q%3D%3D](https://www.mouser.com/ProductDetail/Texas-Instruments/TPS61202DSCR?qs=WxL8HmPi5r6YtrNaHRAS2Q%3D%3D)                                             |
 | U2             | 1   | TPS3840DL20 | SOT23-5   | Supervisory IC   |                                              | [https://www.mouser.com/ProductDetail/Texas-Instruments/TPS3840DL20DBVR?qs=T3oQrply3y%2FZsfSrLIG7Ww%3D%3D](https://www.mouser.com/ProductDetail/Texas-Instruments/TPS3840DL20DBVR?qs=T3oQrply3y%2FZsfSrLIG7Ww%3D%3D)                                   |
+| --             | 1   | 10129378-903001BLF |    | Header pin strip (3 pins) |                                     | https://www.mouser.com/ProductDetail/Amphenol-FCI/10129378-903001BLF?qs=0lQeLiL1qybuYTJnitumiA%3D%3D                                   |
+| --             | 1   | 10129378-904001BLF |    | Header pin strip (4 pins) |                                     | https://www.mouser.com/ProductDetail/Amphenol-FCI/10129378-904001BLF?qs=0lQeLiL1qyYgZuNoMLioxA%3D%3D                                   |
 
 ## Potential Issues
 
+- If you use AAA alkaline batteries (for Game Boy Pocket or Pocket Color), you may find that after using them for a few hours (or if you use mismatched batteries), the Game Boy might stutter a bit when turning the power switch on, taking a few seconds to fully turn on. This is likely due to a higher internal resistance of alkaline batteries as they've been discharged, compared to rechargeable NiMH batteries. I generally recommend using rechargeable NiMH AAA batteries over alkalines to avoid this issue.
 - Using a flash cart, such as the Everdrive or EZ-Flash, the power draw during start-up may be too high and cause the battery voltage to drop below the 2V threshold. You may be able to get it to boot by turning the power switch off and on again. Regardless, this should only occur when you have very low battery life. The components I have chosen should effectively prevent this error from occurring, but I have not tested every system configuration possible.
 - **Version 1.2 only:** When first placing batteries in, you must wait a few seconds for the capacitors to charge up, before it will operate correctly. This is only upon first insertion - once the batteries have been in the system for longer than a few seconds, it will operate completely normally.
 
