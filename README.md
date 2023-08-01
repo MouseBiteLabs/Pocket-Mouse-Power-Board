@@ -37,6 +37,8 @@ Some features of this power board include:
 * Generally improved efficiency over the OEM regulator, and increased switching frequency.
 * Bootloop protection circuitry to prevent overdischarge of AAA batteries, and to allow the Game Boy to die gracefully instead of violently stuttering until the regulator gives up.
 
+I generally recommend using rechargeable NiMH batteries with this board, over alkaline batteries. <a href="https://www.amazon.com/Panasonic-BK-4HCCA8BA-eneloop-Pre-Charged-Rechargeable/dp/B00JHKSL0A/ref=sr_1_1_pp?keywords=eneloop%2BAAA&qid=1690853200&sr=8-1&th=1">Here's a listing for the eneloop pro batteries I use in all of my Game Boys.</a> Other brands of rechargeable batteries I have seen used are Ikea LADDA batteries, and Jugee batteries.
+
 ## Testing
 
 I suggest testing the assembled board externally before mounting it to your Game Boy. If you have misassembled it, a part is incorrect, if there is a hidden solder bridge, or one of many other issues - your 5 V supply might be too high when you turn it on! This is not ideal for your Game Boy! So, please, test the board before you fully connect it to the system.
@@ -98,9 +100,20 @@ C2 is removed on v1.3, and D1 is only used on v1.3.
 | --             | 1   | 10129378-903001BLF |    | Header pin strip (3 pins) |                                     | https://www.mouser.com/ProductDetail/Amphenol-FCI/10129378-903001BLF?qs=0lQeLiL1qybuYTJnitumiA%3D%3D                                   |
 | --             | 1   | 10129378-904001BLF |    | Header pin strip (4 pins) |                                     | https://www.mouser.com/ProductDetail/Amphenol-FCI/10129378-904001BLF?qs=0lQeLiL1qyYgZuNoMLioxA%3D%3D                                   |
 
+## Minimized Parts List and/or for use with Alkaline AAAs
+
+If you don't want the undervoltage lockout mechanism, which may be specifically desirable with alkaline AAAs, you can remove the following components:
+- Capacitor: C1
+- Diode: D1
+- Resistors: R1, R2, R3, R4, R6
+- Transistors: Q1, Q2, Q3, Q4
+- IC: U2
+
+If you have built the system, but find alkaline batteries don't last as long as you would expect, you can simply remove U2 and keep everything else on the board to achieve the same effect.
+
 ## Potential Issues
 
-- If you use AAA alkaline batteries (for Game Boy Pocket or Pocket Color), you may find that after using them for a few hours (or if you use mismatched batteries), the Game Boy might stutter a bit when turning the power switch on, taking a few seconds to fully turn on. This is likely due to a higher internal resistance of alkaline batteries as they've been discharged, compared to rechargeable NiMH batteries. I generally recommend using rechargeable NiMH AAA batteries over alkalines to avoid this issue.
+- If you use AAA alkaline batteries (for Game Boy Pocket or Pocket Color), you may find that after using them for a few hours (or if you use mismatched batteries), the Game Boy might stutter a bit when turning the power switch on, taking a few seconds to fully turn on. This is likely due to a higher internal resistance of alkaline batteries as they've been discharged, compared to rechargeable NiMH batteries. I generally recommend using rechargeable NiMH AAA batteries over alkalines to avoid this issue. If you are a huge fan of alkaline batteries, you can remove U2 to "extend" the life of the system and prevent the struggling start-up on alkaline batteries.
 - Using a flash cart, such as the Everdrive or EZ-Flash, the power draw during start-up may be too high and cause the battery voltage to drop below the 2V threshold. You may be able to get it to boot by turning the power switch off and on again. Regardless, this should only occur when you have very low battery life. The components I have chosen should effectively prevent this error from occurring, but I have not tested every system configuration possible.
 - **Version 1.2 only:** When first placing batteries in, you must wait a few seconds for the capacitors to charge up, before it will operate correctly. This is only upon first insertion - once the batteries have been in the system for longer than a few seconds, it will operate completely normally.
 
