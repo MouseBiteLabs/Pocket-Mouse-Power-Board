@@ -2,6 +2,8 @@
 
 This is a power regulator board for my <a href="https://github.com/MouseBiteLabs/Game-Boy-Pocket-Color">Game Boy Pocket Color (MGBC)</a> project. This *should* work perfectly fine on a regular Game Boy Color or Pocket, but I haven't exhaustively tested it yet. I have, however, tested it in my MGBC project extensively.
 
+Please note I developed this board for use with the MGBC with NiMH AAA batteries. If you use this power board on the MGBC, your experience with alkaline AAAs may vary. See the section below the BOM for information on improving the experience with alkaline batteries.
+
 ![image](https://user-images.githubusercontent.com/97127539/235564188-b096e7be-f18f-4230-86a4-a3ee6293c007.png)
 ![image](https://user-images.githubusercontent.com/97127539/235564273-9be6551b-4502-4b76-bf6e-bf85e09e2950.png)
 
