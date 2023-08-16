@@ -104,7 +104,7 @@ C2 is removed on v1.3, and D1 is only used on v1.3.
 
 ## Minimized Parts List and/or for use with Alkaline AAAs
 
-If you don't want the undervoltage lockout mechanism, which may be specifically desirable with alkaline AAAs, you can remove the following components:
+If you don't want the undervoltage lockout mechanism, which may be specifically desirable with alkaline AAAs, you can assemble the board without the following components:
 - Capacitor: C1
 - Diode: D1
 - Resistors: R1, R2, R3, R4, R6
