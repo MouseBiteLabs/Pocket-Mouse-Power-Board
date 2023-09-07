@@ -4,10 +4,11 @@ This is a power regulator board for my <a href="https://github.com/MouseBiteLabs
 
 Please note I developed this board for use with the MGBC with NiMH AAA batteries. If you use this power board on the MGBC, your experience with alkaline AAAs may vary. See the section below the BOM for information on improving the experience with alkaline batteries.
 
-![image](https://user-images.githubusercontent.com/97127539/235564188-b096e7be-f18f-4230-86a4-a3ee6293c007.png)
+![etsygreen](https://github.com/MouseBiteLabs/Pocket-Mouse-Power-Board/assets/97127539/6cdcec4f-d24c-4289-a29c-2286b42804ee)
+
 ![image](https://user-images.githubusercontent.com/97127539/235564273-9be6551b-4502-4b76-bf6e-bf85e09e2950.png)
 
-*Note: Images show v1.2, rather than the current v1.3. The differences are minimal - see details below.*
+*Note: Image of assembled board shows v1.2, rather than the current v1.3. The differences are minimal - see details below.*
 
 ## Disclaimer
 
@@ -53,6 +54,10 @@ I suggest testing the assembled board externally before mounting it to your Game
 - Turn power on.
 - Measure voltage using a multimeter in DC voltage mode - positive probe on pin 7 (blue box) and negative probe on pin 3 (white box). The voltage should read between 4.95 V and 5.05 V.
 
+If your board does not turn on, check orientation of D1 (and other components).
+
+![image](https://github.com/MouseBiteLabs/Pocket-Mouse-Power-Board/assets/97127539/84e4316a-5e0e-476c-9c9f-123b8e08e446)
+
 ### Version 1.2 Testing
 - Connect pin 3 (white box) to negative side of the input voltage source - such as a battery holder with alligator clips or a benchtop power supply.
 - Connect pin 2 (yellow box) to positive side of the input voltage source. The voltage from the power source must be at least 2.2 V (do not exceed ~4.5 V).
@@ -80,27 +85,29 @@ If you wish to use this on an original Game Boy system, you must:
 
 ## Bill of Materials
 
-A prepopulated cart from Mouser can be found here: https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=72ef9a3afb. The quantities in the cart are enough such that there is at least one extra component in case you drop or lose one, except for U1 and U2 as they are more expensive. You may want to consider ordering multiple quantities of those parts just in case.
+A prepopulated cart from Mouser can be found here: https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=d3eb5f4f8f. The quantities in the cart are enough such that there is at least one extra component in case you drop or lose one, except for U1 and U2 as they are more expensive. You may want to consider ordering multiple quantities of those parts just in case.
 
 If parts are out of stock or backordered, you can search for the parts on Digikey. The only parts that have no replacements are U1 and U2, every other component has suitable alternate parts you can search for.
 
 C2 is removed on v1.3, and D1 is only used on v1.3.
 
-| Ref Des        | QTY | Value       | Footprint | Type             | Notes                                        | Link                                                                                                                                                                                                                                                   |
-| -------------- | --- | ----------- | --------- | ---------------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| C1, C3, C5     | 3   | 22uF        | 0805      | Capacitor (MLCC) | X5R or better, 16V or higher                 | https://www.mouser.com/ProductDetail/Murata-Electronics/GRM21BR61E226ME44K?qs=hNud%2FORuBR25jDsUehWlrQ%3D%3D                                                                                                                                           |
-| C2, C4         | 2   | 0.1uF       | 0603      | Capacitor (MLCC) | C2 is removed on v1.3                        | [https://www.mouser.com/ProductDetail/KEMET/C0603C104M3RACTU?qs=7q2aiX3Gdlh4qBRaMcnohQ%3D%3D](https://www.mouser.com/ProductDetail/KEMET/C0603C104M3RACTU?qs=7q2aiX3Gdlh4qBRaMcnohQ%3D%3D)                                                             |
-| D1             | 1   | BAT42       | SOD323    | Schottky Diode   | Only used on v1.3                            | https://www.mouser.com/ProductDetail/78-BAT42WS-E3-18
-| L1             | 1   | 2.2uH       | 1212      | Inductor         | Saturation current higher than 1 A preferred | [https://www.mouser.com/ProductDetail/Murata-Electronics/LQH3NPN2R2MMEL?qs=sJ5gq5MLFXqbWZz8NzZoog%3D%3D](https://www.mouser.com/ProductDetail/Murata-Electronics/LQH3NPN2R2MMEL?qs=sJ5gq5MLFXqbWZz8NzZoog%3D%3D)                                       |
-| Q1             | 1   | MMBT3906    | SOT23     | PNP BJT          |                                              | [https://www.mouser.com/ProductDetail/Micro-Commercial-Components-MCC/MMBT3906HE3-TP?qs=HBWAp0VN4Rh%2Ft2ZPx%252BV99A%3D%3D](https://www.mouser.com/ProductDetail/Micro-Commercial-Components-MCC/MMBT3906HE3-TP?qs=HBWAp0VN4Rh%2Ft2ZPx%252BV99A%3D%3D) |
-| Q2, Q4         | 2   | 2N7002      | SOT23     | N-channel MOSFET |                                              | [https://www.mouser.com/ProductDetail/Nexperia/2N7002NXBKR?qs=%252B6g0mu59x7J2ddJstTJGkQ%3D%3D](https://www.mouser.com/ProductDetail/Nexperia/2N7002NXBKR?qs=%252B6g0mu59x7J2ddJstTJGkQ%3D%3D)                                                         |
-| Q3             | 1   | MMBT3904    | SOT23     | NPN BJT          |                                              | [https://www.mouser.com/ProductDetail/Nexperia/MMBT3904VL?qs=cnAQGvEIVkKbCwIpHJoHxQ%3D%3D](https://www.mouser.com/ProductDetail/Nexperia/MMBT3904VL?qs=cnAQGvEIVkKbCwIpHJoHxQ%3D%3D)                                                                   |
-| R1, R4, R6, R8 | 4   | 100k        | 0603      | Resistor         |                                              | [https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100KL?qs=e1ok2LiJcmaihem8Va5%2Fsw%3D%3D](https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100KL?qs=e1ok2LiJcmaihem8Va5%2Fsw%3D%3D)                                                         |
-| R2, R3, R5     | 3   | 10k         | 0603      | Resistor         |                                              | [https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0710KL?qs=grNVn54RoB%252B3GtjbJj3wJQ%3D%3D](https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0710KL?qs=grNVn54RoB%252B3GtjbJj3wJQ%3D%3D)                                                       |
-| U1             | 1   | TPS61202    | WSON-10   | Boost Converter  |                                              | [https://www.mouser.com/ProductDetail/Texas-Instruments/TPS61202DSCR?qs=WxL8HmPi5r6YtrNaHRAS2Q%3D%3D](https://www.mouser.com/ProductDetail/Texas-Instruments/TPS61202DSCR?qs=WxL8HmPi5r6YtrNaHRAS2Q%3D%3D)                                             |
-| U2             | 1   | TPS3840DL20 | SOT23-5   | Supervisory IC   |                                              | [https://www.mouser.com/ProductDetail/Texas-Instruments/TPS3840DL20DBVR?qs=T3oQrply3y%2FZsfSrLIG7Ww%3D%3D](https://www.mouser.com/ProductDetail/Texas-Instruments/TPS3840DL20DBVR?qs=T3oQrply3y%2FZsfSrLIG7Ww%3D%3D)                                   |
-| --             | 1   | 10129378-903001BLF |    | Header pin strip (3 pins) |                                     | https://www.mouser.com/ProductDetail/Amphenol-FCI/10129378-903001BLF?qs=0lQeLiL1qybuYTJnitumiA%3D%3D                                   |
-| --             | 1   | 10129378-904001BLF |    | Header pin strip (4 pins) |                                     | https://www.mouser.com/ProductDetail/Amphenol-FCI/10129378-904001BLF?qs=0lQeLiL1qyYgZuNoMLioxA%3D%3D                                   |
+| Reference Designators | Qty | Value/Part Number  | Package | Description      | Comment                                      | Source                                                                                                                                                                                                                                                 |
+| --------------------- | --- | ------------------ | ------- | ---------------- | -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| C1, C3                | 2   | 47uF               | 0805    | Capacitor (MLCC) | X5R or better, 10V or higher                 | [https://www.mouser.com/ProductDetail/Murata-Electronics/GRM21BR61A476ME15L?qs=hNud%2FORuBR2%2FEB7WUpdltg%3D%3D](https://www.mouser.com/ProductDetail/Murata-Electronics/GRM21BR61A476ME15L?qs=hNud%2FORuBR2%2FEB7WUpdltg%3D%3D)                       |
+| C4                    | 1   | 0.1uF              | 0603    | Capacitor (MLCC) | C2 is removed on v1.3                        | [https://www.mouser.com/ProductDetail/KEMET/C0603C104M3RACTU?qs=7q2aiX3Gdlh4qBRaMcnohQ%3D%3D](https://www.mouser.com/ProductDetail/KEMET/C0603C104M3RACTU?qs=7q2aiX3Gdlh4qBRaMcnohQ%3D%3D)                                                             |
+| C5                    | 1   | 22uF               | 0805    | Capacitor (MLCC) | X5R or better, 16V or higher                 | [https://www.mouser.com/ProductDetail/Murata-Electronics/GRM21BR61E226ME44K?qs=hNud%2FORuBR25jDsUehWlrQ%3D%3D](https://www.mouser.com/ProductDetail/Murata-Electronics/GRM21BR61E226ME44K?qs=hNud%2FORuBR25jDsUehWlrQ%3D%3D)                           |
+| D1                    | 1   | BAT42              | SOD323  | Schottky Diode   | Only used on v1.3                            | https://www.mouser.com/ProductDetail/78-BAT42WS-E3-18                                                                                                                                                                                                  |
+| L1                    | 1   | 2.2uH              | 1212    | Inductor         | Saturation current higher than 1 A preferred | [https://www.mouser.com/ProductDetail/Murata-Electronics/LQH3NPN2R2MMEL?qs=sJ5gq5MLFXqbWZz8NzZoog%3D%3D](https://www.mouser.com/ProductDetail/Murata-Electronics/LQH3NPN2R2MMEL?qs=sJ5gq5MLFXqbWZz8NzZoog%3D%3D)                                       |
+| Q1                    | 1   | MMBT3906           | SOT23   | PNP BJT          |                                              | [https://www.mouser.com/ProductDetail/Micro-Commercial-Components-MCC/MMBT3906HE3-TP?qs=HBWAp0VN4Rh%2Ft2ZPx%252BV99A%3D%3D](https://www.mouser.com/ProductDetail/Micro-Commercial-Components-MCC/MMBT3906HE3-TP?qs=HBWAp0VN4Rh%2Ft2ZPx%252BV99A%3D%3D) |
+| Q2, Q4                | 2   | 2N7002             | SOT23   | N-channel MOSFET |                                              | [https://www.mouser.com/ProductDetail/Nexperia/2N7002NXBKR?qs=%252B6g0mu59x7J2ddJstTJGkQ%3D%3D](https://www.mouser.com/ProductDetail/Nexperia/2N7002NXBKR?qs=%252B6g0mu59x7J2ddJstTJGkQ%3D%3D)                                                         |
+| Q3                    | 1   | MMBT3904           | SOT23   | NPN BJT          |                                              | [https://www.mouser.com/ProductDetail/Nexperia/MMBT3904VL?qs=cnAQGvEIVkKbCwIpHJoHxQ%3D%3D](https://www.mouser.com/ProductDetail/Nexperia/MMBT3904VL?qs=cnAQGvEIVkKbCwIpHJoHxQ%3D%3D)                                                                   |
+| R1, R4, R8            | 3   | 100k               | 0603    | Resistor         |                                              | [https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100KL?qs=e1ok2LiJcmaihem8Va5%2Fsw%3D%3D](https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-07100KL?qs=e1ok2LiJcmaihem8Va5%2Fsw%3D%3D)                                                         |
+| R2, R3, R5            | 3   | 10k                | 0603    | Resistor         |                                              | [https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0710KL?qs=grNVn54RoB%252B3GtjbJj3wJQ%3D%3D](https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0710KL?qs=grNVn54RoB%252B3GtjbJj3wJQ%3D%3D)                                                       |
+| R6                    | 1   | 47k                | 0603    | Resistor         |                                              | [https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0747KL?qs=gt6vzsuosg3jXzmCiDCCdg%3D%3D](https://www.mouser.com/ProductDetail/YAGEO/RC0603FR-0747KL?qs=gt6vzsuosg3jXzmCiDCCdg%3D%3D)                                                               |
+| U1                    | 1   | TPS61202           | VSON-10 | Boost Converter  |                                              | [https://www.mouser.com/ProductDetail/Texas-Instruments/TPS61202DRCR?qs=KS%252B%252BetD%2FUt9ba9GgZBolfg%3D%3D](https://www.mouser.com/ProductDetail/Texas-Instruments/TPS61202DRCR?qs=KS%252B%252BetD%2FUt9ba9GgZBolfg%3D%3D)                         |
+| U2                    | 1   | TPS3840DL20        | SOT23-5 | Supervisory IC   |                                              | [https://www.mouser.com/ProductDetail/Texas-Instruments/TPS3840DL20DBVR?qs=T3oQrply3y%2FZsfSrLIG7Ww%3D%3D](https://www.mouser.com/ProductDetail/Texas-Instruments/TPS3840DL20DBVR?qs=T3oQrply3y%2FZsfSrLIG7Ww%3D%3D)                                   |
+| --                    | 1   | 10129378-904001BLF | --      | 1x4 Header Pins  |                                              | [https://www.mouser.com/ProductDetail/649-1012937890401BLF](https://www.mouser.com/ProductDetail/649-1012937890401BLF)                                                                                                                                 |
+| --                    | 1   | 10129378-903001BLF | --      | 1x3 Header Pins  |                                              | [https://www.mouser.com/ProductDetail/649-1012937890301BLF](https://www.mouser.com/ProductDetail/649-1012937890301BLF)                                                                                                                                 |
 
 ## Minimized Parts List and/or for use with Alkaline AAAs
 
@@ -127,8 +134,7 @@ If you have built the system, but find alkaline batteries don't last as long as 
 - Removed C2
 
 ### v1.2
-- Changed C1 to 0805 size, changed value to 22uF
-- R6 changed to 100k
+- Changed C1 to 0805 size
 - Added test points for U2 supply voltage and PSU_EN net
 
 ### v1.1
