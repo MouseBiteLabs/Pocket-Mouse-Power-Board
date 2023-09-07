@@ -26,7 +26,7 @@ The zipped folder contains all the gerber files for this board.
 
 **I sell this board on Etsy, so you don't have to buy multiples from board fabricators:**
 
-<a href="https://www.etsy.com/listing/1473483915/pocket-mouse-power-board"><img src="https://github-production-user-asset-6210df.s3.amazonaws.com/97127539/239718536-5c9aefe3-0628-4434-b8d8-55ff80ac3bbc.png" alt="PCB from Etsy" /></a> 
+<a href="https://mousebitelabs.etsy.com/listing/1473483915/pocket-mouse-power-board?utm_source=Copy&utm_medium=ListingManager&utm_campaign=Share&utm_term=so.lmsm&share_time=1694125917396"><img src="https://github-production-user-asset-6210df.s3.amazonaws.com/97127539/239718536-5c9aefe3-0628-4434-b8d8-55ff80ac3bbc.png" alt="PCB from Etsy" /></a> 
 
 You can alternatively use the zipped folder at any board fabricator you like. You may also buy the board from PCBWay using this link (disclosure: I receive 10% of the sale value to go towards future PCB orders):
 
