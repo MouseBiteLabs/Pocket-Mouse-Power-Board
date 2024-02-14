@@ -4,7 +4,7 @@ Reference Designators,Qty,Value/Part Number,Package,Description,Comment,Source
 C4,1,0.1uF,0603,Capacitor (MLCC),C2 is removed on v1.3,"	https://www.mouser.com/ProductDetail/KEMET/C0603C104M3RACTU?qs=7q2aiX3Gdlh4qBRaMcnohQ%3D%3D"
 C5,1,22uF,0805,Capacitor (MLCC),"X5R or better, 16V or higher",https://www.mouser.com/ProductDetail/Murata-Electronics/GRM21BR61E226ME44K?qs=hNud%2FORuBR25jDsUehWlrQ%3D%3D
 D1,1,BAT42,SOD323,Schottky Diode,Only used on v1.3,https://www.mouser.com/ProductDetail/78-BAT42WS-E3-18
-L1,1,2.2uH,1212,Inductor,Saturation current higher than 1 A preferred,https://www.mouser.com/ProductDetail/Murata-Electronics/LQH3NPN2R2MMEL?qs=sJ5gq5MLFXqbWZz8NzZoog%3D%3D
+L1,1,2.2uH,1212,Inductor,Saturation current higher than 1 A preferred,https://www.mouser.com/ProductDetail/810-VLS3012HBX2R2M-N
 Q1,1,MMBT3906,SOT23,PNP BJT,,https://www.mouser.com/ProductDetail/Micro-Commercial-Components-MCC/MMBT3906HE3-TP?qs=HBWAp0VN4Rh%2Ft2ZPx%252BV99A%3D%3D
 "Q2, Q4",2,2N7002,SOT23,N-channel MOSFET,,https://www.mouser.com/ProductDetail/Nexperia/2N7002NXBKR?qs=%252B6g0mu59x7J2ddJstTJGkQ%3D%3D
 Q3,1,MMBT3904,SOT23,NPN BJT,,https://www.mouser.com/ProductDetail/Nexperia/MMBT3904VL?qs=cnAQGvEIVkKbCwIpHJoHxQ%3D%3D
