@@ -87,7 +87,9 @@ If you wish to use this on an original Game Boy system, you must:
 
 A prepopulated cart from Mouser can be found here: https://www.mouser.com/ProjectManager/ProjectDetail.aspx?AccessID=9fcbf0306d. The quantities in the cart are enough such that there is at least one extra component in case you drop or lose one, except for U1 and U2 as they are more expensive. You may want to consider ordering multiple quantities of those parts just in case.
 
-If parts are out of stock or backordered, you can search for the parts on Digikey. The only parts that have no replacements are U1 and U2, every other component has suitable alternate parts you can search for. (Is C1 and C3 out of stock? Try GRM21BR61A476ME15K.)
+If parts are out of stock or backordered, you can search for the parts on Digikey. The only parts that have no replacements are U1 and U2, every other component has suitable alternate parts you can search for. 
+
+(Is C1 and C3 out of stock? Try GRM21BR61A476ME15K.)
 
 C2 is removed on v1.3, and D1 is only used on v1.3.
 
