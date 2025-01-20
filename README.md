@@ -32,6 +32,10 @@ You can alternatively use the zipped folder at any board fabricator you like. Yo
 
 <a href="https://www.pcbway.com/project/shareproject/Pocket_Mouse_Power_Board_3c1c3bc6.html"><img src="https://www.pcbway.com/project/img/images/frompcbway-1220.png" alt="PCB from PCBWay" /></a> 
 
+And finally, insideGadgets sells these boards fully populated!
+
+<a href="https://shop.insidegadgets.com/product/pocket-mouse-power-board/"><img src="https://shop.insidegadgets.com/wp-content/uploads/2022/09/ig_logo_2.png"></a>
+
 ## Features
 
 Some features of this power board include: 
